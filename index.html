@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="./styles/style-grid.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+
+</head>
+<body>
+
+  <header>
+    <h1>Social Media Dashboard</h1>
+    <p>Total Followers: 23,004</p>
+  </header>
+  <div class="bg-box"></div>
+  <div class="switch-container">
+
+    Dark Mode
+    <label id="switcher" class="switch">
+       <input type="checkbox">
+      <span></span>
+    </label>
+
+  </div>
+
+  <div class="card facebook up card-lg">
+    <div class="username">
+       <a href="#">@nathanf</a>
+    </div>
+    <div class="metric">
+      <h2>1987</h2>
+      <span>Followers</span>
+    </div>
+
+    <small>12 Today</small>
+
+  </div>
+
+  <div class="card twitter up card-lg">
+    <div class="username">
+      <a href="#">@nathanf</a>
+    </div>
+    
+    <div class="metric">
+      <h2>1044</h2>
+      <span>Followers</span>
+    </div>
+
+    <small>99 Today</small>
+  </div>
+
+  <div class="card instagram up card-lg">
+    <div class="username">
+      <a href="#"> @realnathanf</a>
+    </div>
+    
+    <div class="metric">
+      <h2>11k</h2>
+      <span>Followers</span>
+    </div>
+
+    <small>1099 Today</small>
+  </div>
+
+  <div class="card youtube down card-lg">
+    <div class="username">
+      <a href="#">Nathan F.</a>
+    </div>
+   
+      <div class="metric">
+        <h2>8239</h2>
+        <span>Subscribers</span>
+      </div>
+    <small>144 Today</small>
+  </div>
+
+    <h2 class="title">Overview - Today</h2>
+    
+      <div class="card card-sm facebook up">
+        <h3>Page Views</h3>
+        <h4>87
+          <small>3%</small>
+        </h4>
+  
+      </div>
+    
+      <div class="card card-sm facebook down">
+        <h3>Likes</h3>
+        <h4>52
+          <small>2%</small>
+        </h4>
+      </div>
+  
+      <div class="card card-sm instagram up">
+        <h3>Likes</h3>
+        <h4>5462
+          <small> 2257%</small>
+        </h4>
+      </div>
+  
+      <div class="card card-sm instagram up">
+        <h3>Profile Views</h3>
+        <h4>52k
+          <small>1375%</small> 
+        </h4>
+      </div>
+  
+      <div class="card card-sm twitter up">
+        <h3>Retweets</h3>
+        <h4>117
+          <small>303%</small>
+        </h4>
+      </div>
+  
+      <div class="card card-sm twitter up">
+        <h3>Likes</h3>
+        <h4>507
+          <small>553%</small>
+        </h4>
+      </div>
+      
+      <div class="card card-sm youtube down">
+        <h3>Likes</h3>
+        <h4>107
+          <small>19%</small>
+        </h4>
+      </div>
+  
+      <div class="card card-sm youtube down">
+        <h3>Total Views</h3>
+        <h4>1407
+          <small>12%</small>
+        </h4>
+      </div>
+    
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://twitter.com/narekkozmoyan" target="_blank">Narek Kozmoyan</a>.
+  </div>
+
+  <script>
+      let checkboxElem = document.querySelector("#switcher>input");
+      checkboxElem.addEventListener("change", function(){
+        document.body.classList.toggle("light");
+      })
+      
+  </script>
+</body>
+</html>
